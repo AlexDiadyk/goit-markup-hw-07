@@ -9,6 +9,11 @@
 --third-color-background: #F4F4FD;
 --portfolio-item-bg: #EEEEEE;
 --border-partners-company: #8E8F99;
+--animation-duration: 250ms;
+--animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+@viewport { 
+  width: device-width;
 }
 
 /* html {
@@ -70,10 +75,8 @@ padding-bottom: 120px;
 }
 
 .container {
-margin-left: auto;
-margin-right: auto;
-padding-left: 15px;
-padding-right: 15px;
+margin: 0 auto;
+padding: 0 15px;
 width: 1158px;
 }
 

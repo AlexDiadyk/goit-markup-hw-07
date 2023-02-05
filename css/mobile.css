@@ -1,0 +1,58 @@
+@viewport { 
+    width: device-width;
+ }
+
+ @media screen and (max-width: 767.9px) {
+.header-container {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+}
+.site-nav,
+.contacts {
+  display: none;
+}
+}
+
+ @media screen and (min-width: 480px) and (max-width: 767px) {
+   
+    .container-header{
+       max-width: 428px;
+    }
+    .container{
+       max-width: 428px;
+    }
+    .overlay{
+       max-width: 428px;
+    }
+    .container-footer{
+       max-width: 428px;
+    }
+
+    .header{
+       max-width: 428px;
+    }
+    .container-menu{
+       max-width: 428px;
+    }
+
+    .site-nav {
+        display: none;
+     }
+ }
+ @media screen and (max-width: 767px){
+    .button-list{
+       flex-wrap: wrap;
+    }
+    .button-list-member:nth-child(-n+3){
+       margin-bottom: 16px;
+    }
+ }
+ @media screen and (max-width: 428px){
+    .social-link-list-menu{
+        gap: initial;
+        justify-content: space-between;
+    }
+ }
+ 
