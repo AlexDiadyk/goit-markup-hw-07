@@ -1,5 +1,6 @@
 :root {
 --accent: #404BBF;
+--iris: #4D5AE5;
 --primary-text-color: #2E2F42;
 --text-color-white: #FFFFFF;
 --text-color-gray: #434455;
@@ -40,6 +41,7 @@ li {
 
 ul,
 ol {
+  list-style: none;
   margin: 0;
   padding-left: 0;
 }
@@ -109,6 +111,12 @@ header {background: var(--main-background-color);
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+.header {
+    width: 100%;
+}
+}
+
 .header-container {
 display: flex;
 align-items: center;
@@ -135,7 +143,7 @@ font-family: 'Raleway', sans-serif;
 font-size: 18px;
 line-height: 1.3;
 letter-spacing: 0.03em;
-color: #4D5AE5;
+color: var(--iris);
 text-transform: uppercase;
 }
 
@@ -246,12 +254,11 @@ padding-bottom: 28px;
 display: flex; align-items: center;}
 
 
-
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 .contacts {
-flex-direction: column;
-gap: 10px;
+display: block;
+margin-left: auto;
+padding-bottom: 11px;
 }
 }
 
@@ -316,8 +323,134 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-open-icon {
-  color: #2E2F42;
+  stroke: var(--primary-text-color);
 }
+
+/* Mobile menu */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-menu-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  }
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-background-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.mobile-menu > .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.mobile-nav-item {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none
+}
+
+.mobile-nav-item:hover,
+.mobile-nav-item:focus {
+	color: var(--accent);
+}
+
+.mobile-menu-contacts {
+  margin-right: auto;
+    width: 100%;
+  
+}
+
+.mobile-contacts {
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 48px;
+  
+}
+
+.mobile-contacts-item {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color:var(--text-color-gray);
+    text-decoration: none
+}
+
+.mobile-contacts-item:hover,
+.mobile-contacts-item:focus {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1.1;
+	color: #4d5ae5;
+}
+
+
+.mobile-social-list{
+  display: flex;
+  margin-bottom: 32px;
+	justify-content: space-between;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-items {
+  width: 40px;
+  height: 40px;
+  color: var(--third-color-background);
+}
+.mobile-link {
+	background-color: var(--iris);
+  fill: var(--third-color-background);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link:hover,
+.mobile-link:focus {
+	background-color: var(--accent);
+}
+
 
 /* MAIN CONTENT */
 
@@ -452,7 +585,7 @@ pointer-events: none;
 
 .close-button:hover,
 .close-button:focus {
-  fill: #404BBF;
+  fill: var(--accent);
   border: 1px solid var(--accent);
 }
 
@@ -519,11 +652,11 @@ pointer-events: none;
 .form-field:hover .form-textarea,
 .form-input:focus,
 .form-textarea:focus {
-  border: 1px solid #4D5AE5;
+  border: 1px solid var(--iris);
 }
 
 .form-textarea:hover {
-  border: 1px solid #4D5AE5;
+  border: 1px solid var(--iris);
 }
 
 .form-field:hover .modal-icon {
@@ -833,7 +966,7 @@ color: var(--primary-text-color);
 
 .background-team {
 display: flex;
-
+column-gap: 24px;
 text-align: center;
 justify-content: center;
 background-color: var(--third-color-background);;

@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
   
@@ -36,14 +38,6 @@
             </ul>
         </nav>
 
-
-        <button data-menu-open type="button" class="mobile-menu-open" >
-          <svg class="menu-open-icon" width="32" height="22">
-              <use href="./images/icons.svg#burger"></use>
-          </svg>
-          </button>
-
-
         <ul class="contacts list">
             <li class="nav-contacts-header">
                 <a class="mail-header header-icon-link" rel="noopener noreferrer nofollow" href="info@devstudio.com">
@@ -61,7 +55,79 @@
                     +11 (000) 111-11-11</a>
             </li>
         </ul>
+
+        <button data-menu-open type="button" class="mobile-menu-open" >
+          <svg class="menu-open-icon" width="32" height="22">
+              <use href="./images/icons.svg#burger"></use>
+          </svg>
+          </button>
+
     </div>
+
+    <!-- Mobile menu -->
+    
+  <div data-menu class="mobile-menu is-hidden" >
+  <div class="container">
+  <div class="mob-menu-nav">
+    
+  <button type="button" data-menu-close class="mobile-menu-close" > 
+  <svg class="menu-close-icon" width="8" height="8">
+  <use class="menu-close-icon" href="./images/icons.svg#icon-close">
+  </use>
+  </svg>
+  </button>
+  
+    <nav>
+   <ul class="mobile-menu-nav">
+                     <li><a class="mobile-nav-item current" style="color:#4d5ae5;" href="./index.html" 
+                         >Studio</a></li>
+                     <li><a class="mobile-nav-item" href="./portfolio.html">Portfolio</a></li>
+                     <li><a class="mobile-nav-item" href="">Contacts</a></li>
+  </ul>
+      </nav>
+          </div>
+  <div class="mobile-menu-contacts">
+                 <ul class="mobile-contacts">
+                 <li><a class="mobile-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                 <li><a class="mobile-contacts-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+             </ul>
+  
+            <ul class="mobile-social-list">
+                    <li class="mobile-items">
+                      <a class="mobile-link" href="#">
+                        <svg class="link-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="mobile-link" href="#">
+                        <svg class="link-icon" width="20" height="20" viewBox="0 0 20 20">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li >
+                      <a class="mobile-link" href="#">
+                        <svg class="link-icon" width="20" height="20" viewBox="0 0 20 20">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="mobile-link" href="#">
+                        <svg class="link-icon" width="20" height="20" viewBox="0 0 20 20">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+             
+       </div>       
+  </div>
+  </div>
+  </div>
+
     </header>
     <!-- MAIN CONTENT-->
     <main>
@@ -483,5 +549,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script> 
 </body>
 </html>
