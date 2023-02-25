@@ -1,0 +1,32 @@
+@media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1158px;
+  }
+  }
+
+  /* HEADER */
+
+  /* Hero */
+
+  /* Advatages */
+
+  @media  screen and (min-width: 1200px) {
+    .advantages {
+      padding-top: 120px;
+      padding-bottom: 120px;
+  }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .advantages-background {
+    display: flex;
+  }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .advantages .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  }

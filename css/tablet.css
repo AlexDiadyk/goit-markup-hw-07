@@ -1,0 +1,63 @@
+@media screen and (min-width: 768px) {
+     .container {
+      max-width: 768px;
+  }
+  }
+
+  /* HEADER */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+     .contacts {
+     display: block;
+     margin-left: auto;
+     padding-bottom: 11px;
+  }
+  }
+    
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+     .item-icon {
+     display: none;
+ }
+ }
+
+@media screen and (min-width: 768px) {
+     .mobile-menu-open {
+     display: none;
+}
+}
+
+/* Hero */
+
+/* Advatages */
+
+@media screen and (max-width: 1199.9px) {
+     .advantages-background {
+     display: none;
+  }
+  }
+
+  @media screen and (min-width: 768px) {
+     .advantages .title {
+     text-align: start;
+ }
+ }
+
+    @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+     .advantages-list {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     row-gap: 72px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     column-gap: 24px;
+      margin: 0 auto;
+ }
+ }
+
+ @media screen and (max-width: 1199.9px) {
+     .advantage-text {
+     font-weight: 500;
+ }
+ }

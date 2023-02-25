@@ -1,0 +1,57 @@
+
+/* HEADER */
+
+@media screen and (max-width: 767.9px) {
+     .header-container {
+     position: relative;
+     padding: 24px 16px;
+ }
+ }
+
+@media screen and (max-width:767.9px) {
+     .nav-contacts-header {
+     display: none;
+  }
+ }
+
+@media screen and (max-width:767.9px) {
+     .contacts {
+     padding: 0;
+  }
+  }
+
+      /* Hero */
+
+@media screen and (max-width:767.9px) {
+     .title-decision {  
+     font-size: 36px;
+     line-height: 1.1;
+     text-transform: capitalize;
+  }
+  }
+
+    /* Advatages */
+
+@media  screen and (max-width: 767.9px) {
+     .list {
+      flex-wrap: wrap;
+  }
+  }
+
+@media screen and (max-width: 767.9px) {
+    .item-benefits:not(:last-child) {
+     margin-bottom: 72px;
+     margin-right: 0;
+  }
+ }
+    
+        
+@media screen and (max-width: 767.9px) {
+    .advantages .title {
+    text-align: center;
+ }
+ }
+
+
+      
+
