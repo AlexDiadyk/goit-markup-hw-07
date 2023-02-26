@@ -20,15 +20,40 @@
   }
   }
 
+  @media screen and (min-width: 768px) {
+    .mobile-menu {
+    display: none;
+}
+}
+
       /* Hero */
 
+@media screen and (min-width: 480px) and (max-width: 767px) and (max-width: 767px) {
+ .overlay {
+    height: 432px;
+    outline: 1px solid transparent;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/heromobile_2x.jpg), url(../images/hero/heromobile_1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2e2f42;
+}
+}
+
+
 @media screen and (max-width:767.9px) {
-     .title-decision {  
-     font-size: 36px;
-     line-height: 1.1;
-     text-transform: capitalize;
-  }
-  }
+    .title-decision {  
+    font-size: 36px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+}
+
+
 
     /* Advatages */
 
@@ -53,5 +78,93 @@
  }
 
 
-      
+ @media screen and (max-width: 767.9px) {
+     .advantages-list {
+     justify-content: center;
+ }
+ }
 
+    /* Our team */
+
+@media screen and (max-width: 767.9px) {
+    .team-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+    .partners {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+    .partners-image:not(:nth-child(2n)) {
+    margin-right: 16px;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+    .partners-image:not(:nth-last-child(-n+2)) {
+    margin-bottom: 72px;
+}
+}
+
+
+     /* Footer */
+
+@media screen and (max-width: 767.9px) {
+    .container-footer {
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+}
+      
+@media screen and (max-width: 767.9px) {
+  .logo-footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+  .footter-text {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
+  width: 268px;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+  .social-block {
+  text-align: center;
+  padding-bottom: 72px;
+  margin: 0px;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+  .join {
+  padding-bottom: 16px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 767.9px) {
+  .icons.list {
+  justify-content: center;
+}
+.input-post {
+    margin: 0;
+}
+.item-social:not(:last-child) {
+margin-right: 8px;
+}
+}
