@@ -10,10 +10,6 @@
 
   /* Hero */
 
-  @media screen and (min-width: 1158px) {
-
-  }
-
 
   @media screen and (min-width: 1158px) {
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -21,7 +17,7 @@
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/desktophero_2x.jpg);
     }
     }
-    
+
     .overlay {
       outline: 1px solid transparent;
       margin: 0 auto;
@@ -42,15 +38,9 @@
       padding-top: 120px;
       padding-bottom: 120px;
   }
-  }
-
-  @media screen and (min-width: 1200px) {
     .advantages-background {
     display: flex;
   }
-  }
-
-  @media screen and (min-width: 1200px) {
     .advantages .title {
     font-weight: 500;
     font-size: 20px;
@@ -63,11 +53,8 @@
 @media  screen and (min-width: 1200px) {
 .team {
     padding-top: 120px;
-    padding-bottom: 120px;
- }
- }
-
- @media  screen and (min-width: 1200px) {
+    padding-bottom: 120px
+  }
   .employment-partners {
   padding-top: 120px;
   padding-bottom: 120px;

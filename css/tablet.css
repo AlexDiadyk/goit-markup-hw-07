@@ -77,9 +77,14 @@
   }
   }
 
+
 @media screen and (min-width: 768px) {
      .advantages .title {
      text-align: start;
+     font-size: 36px;
+     line-height: 1.1;
+     letter-spacing: 0.02em;
+     text-transform: capitalize;
  }
  }
 
@@ -96,8 +101,12 @@
 
  @media screen and (max-width: 1199.9px) {
     .advantage-text {
-     font-weight: 500;
-
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        /* or 150% */
+        
+        letter-spacing: 0.02em;
  }
  }
 
@@ -125,9 +134,6 @@
     justify-content: center;
      gap: 24px;
  }
- }
-
- @media screen and (min-width: 768px) and (max-width: 1199px) {
     .partners {
     display: flex;
     flex-wrap: wrap;
@@ -140,36 +146,25 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container-footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        column-gap: 24px;
-        row-gap: 72px;
-        padding: 93px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding: 93px;
 }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
 .footer-wrapper {
     margin-right: 24px;
     margin-left: 93px;
 }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo-footer {
   justify-content: left;
 }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__wrapper {
     width: 264px;
 }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-block {
   margin: 0;
 }
-
+}

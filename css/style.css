@@ -686,6 +686,11 @@ pointer-events: none;
 .advantages > .container > .list {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .title {
+
+       }
+}
 
 .advantages .title {
   margin-top: 0px;
