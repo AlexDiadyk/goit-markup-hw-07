@@ -1,58 +1,142 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WebStudio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/mobile.css">
+<link rel="stylesheet" href="./css/tablet.css">
+<link rel="stylesheet" href="./css/desktop.css">
+
 </head>
 <body>
-    <!-- Шапка -->
-    <header class="header">
-      <div class="header-container container">
-
-              <!-- site navigation -->
-
-      <nav class="nav">
-          <a class="logo" href="index.html">web<span class="logo-studio">studio</span>
-          </a>
-          <ul class="site-nav list">
-              <li class="nav-contacts-header">
-                <a class="nav-studio link " href="./index.html">Studio</a>
-              </li>
-              <li class="nav-contacts-header">
-                <a class="nav-portfolio link current" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li>
-                <a class="nav-kontakty link" href="#">Contacts</a>
-              </li>
-          </ul>
-      </nav>
-      <ul class="contacts list">
-          <li class="nav-contacts-header">
-              <a class="mail-header header-icon-link" rel="noopener noreferrer nofollow" href="info@devstudio.com">
-                  <svg class="item-icon mail">
-                      <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>  
-                  info@devstudio.com
-              </a>
-          </li>
-          <li>
-              <a class="tel-header header-icon-link" href="tel:+380961111111">
-                  <svg class="item-icon phone">
-                      <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +11 (000) 111-11-11</a>
-          </li>
-      </ul>
+    <!-- HEADER -->
+<header class="header">
+  <div class="header-container container">
+  
+      <!-- site navigation -->
+  
+  <nav class="nav">
+  
+  <a class="logo" href="index.html">web<span class="logo-studio">studio</span>
+  </a>
+  
+  <ul class="site-nav list">
+  <li class="nav-contacts-header">
+     <a class="nav-studio link " href="./index.html">Studio</a>
+  </li>
+  <li class="nav-contacts-header">
+     <a class="nav-portfolio link current" href="./portfolio.html">Portfolio</a>
+  </li>
+  <li class="nav-contacts-header">
+    <a class="nav-kontakty link" href="#">Contacts</a>
+  </li>
+  </ul>
+  
+  </nav>
+  
+  <ul class="contacts list">
+  <li class="nav-contacts-header">
+     <a class="mail-header header-icon-link" rel="noopener noreferrer nofollow" href="info@devstudio.com">
+     <svg class="item-icon mail">
+     <use href="./images/icons.svg#icon-mail"></use>
+     </svg>  
+     info@devstudio.com
+     </a>
+  </li>
+  <li class="nav-contacts-header">
+     <a class="tel-header header-icon-link" href="tel:+380961111111">
+     <svg class="item-icon phone">
+     <use href="./images/icons.svg#icon-smartphone"></use>
+     </svg>
+     +11 (000) 111-11-11</a>
+  </li>
+  </ul>
+  
+  <button data-menu-open type="button" class="mobile-menu-open" >
+      <svg class="menu-open-icon" width="32" height="22">
+      <use href="./images/icons.svg#burger"></use>
+      </svg>
+  </button>
+  
   </div>
-  </header>
+  
+      <!-- Mobile menu -->
+    
+    <div data-menu class="mobile-menu" >
+    <div class="container">
+    <div class="mob-menu-nav">
+      
+    <button type="button" data-menu-close class="mobile-menu-close" > 
+       <svg class="menu-close-icon" width="8" height="8">
+       <use class="menu-close-icon" href="./images/icons.svg#icon-close">
+       </use>
+       </svg>
+    </button>
+    
+    <nav>
+    <ul class="mobile-menu-nav">
+        <li><a class="mobile-nav-item current" style="color:#4d5ae5;" href="./index.html" 
+        >Studio</a></li>
+        <li><a class="mobile-nav-item" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="mobile-nav-item" href="">Contacts</a></li>
+    </ul>
+        </nav>
+   </div>
+  
+    <div class="mobile-menu-contacts">
+      <ul class="mobile-contacts">
+      <li><a class="mobile-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a class="mobile-contacts-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      </ul>
+    
+  <ul class="mobile-social-list">
+    <li class="mobile-items">
+       <a class="mobile-link" href="#">
+       <svg class="link-icon" width="20" height="20">
+       <use href="./images/icons.svg#icon-instagram"></use>
+       </svg>
+       </a>
+    </li>
+    <li>
+       <a class="mobile-link" href="#">
+       <svg class="link-icon" width="20" height="20" viewBox="0 0 20 20">
+       <use href="./images/icons.svg#icon-twitter"></use>
+       </svg>
+        </a>
+    </li>
+    <li >
+       <a class="mobile-link" href="#">
+       <svg class="link-icon" width="20" height="20" viewBox="0 0 20 20">
+       <use href="./images/icons.svg#icon-facebook"></use>
+       </svg>
+       </a>
+    </li>
+    <li>
+       <a class="mobile-link" href="#">
+       <svg class="link-icon" width="20" height="20" viewBox="0 0 20 20">
+       <use href="./images/icons.svg#icon-linkedin"></use>
+       </svg>
+       </a>
+    </li>
+    </ul>     
+    </div>       
+    </div>
+    </div>
+    </div>
+  
+      </header>
     <!--- MAIN CONTENT -->
     <main >
         <section class="main-portfolio">
@@ -80,7 +164,7 @@
 
             <!-- filtr gallery -->
                 <ul class="list list-portfolio">
-                    <li class="gallery-item">
+                    <li class="gallery-item-portfolio">
                         <a href="" class="portfolio-elements">
                           <div class="portfolio-card">
                         <img class="image-tehnokriak" src="./images/banking.jpg" alt="banking" width="360" height="300">
@@ -96,7 +180,7 @@
                        </div>
                     </a>
                     </li>
-                    <li class="gallery-item">
+                    <li class="gallery-item-portfolio">
                       <a href="#" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-poster" src="./images/cashless.jpg" alt="cashless" width="360" height="300">
@@ -112,7 +196,7 @@
                        </div>
                       </a>
                     </li>
-                    <li class="gallery-item">
+                    <li class="gallery-item-portfolio">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-seafood" src="./images/meditation.jpg" alt="meditation" width="360" height="300">
@@ -128,7 +212,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="gallery-item">
+                    <li class="gallery-item-portfolio">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-prime" src="./images/taxi.jpg" alt="taxi" width="360" height="300">
@@ -144,7 +228,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="gallery-item">
+                    <li class="gallery-item-portfolio">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-boxes" src="./images/screen.jpg" alt="screen" width="360" height="300">
@@ -160,7 +244,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="gallery-item">
+                    <li class="gallery-item-portfolio">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-inspiratio" src="./images/online.jpg" alt="online" width="360" height="300">
@@ -176,10 +260,10 @@
                         </div>
                       </a>
                     </li>
-                    <li class="gallery-item gallery-button">
+                    <li class="gallery-item-portfolio gallery-button">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
-                        <img class="image-limited" src="./images/instagram.jpg" alt="instagram" width="360" height="300">
+                        <img class="image-limited" src="./images/instagram.jpg" alt="instagram" width="356" height="300">
                         <div class="portfolio-info">
                           <p class="portfolio-galerry-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -192,7 +276,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="gallery-item gallery-button">
+                    <li class="gallery-item-portfolio gallery-button">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-lab" src="./images/organic.jpg" alt="organic" width="360" height="300">
@@ -208,7 +292,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="gallery-item gallery-button">
+                    <li class="gallery-item-portfolio gallery-button">
                       <a href="" class="portfolio-elements">
                         <div class="portfolio-card">
                         <img class="image-growing" src="./images/fresh.jpg" alt="fresh" width="360" height="300">
@@ -231,9 +315,10 @@
 
     <!-- Footer-->
 
+    <!--- Footer --->
     <footer class="footer">
       <div class="container container-footer">
-        <div>
+        <div class="footer__wrapper">
       <a class="logo-footer" href="index.html">Web<span class="logo-studio-footer">Studio</span></a>
       <p class="footter-text">
         Increase the flow of customers and sales for your business with digital marketing & growth solutions.
@@ -274,7 +359,7 @@
       </div>
 
       <!-- Subscription form -->
-      <form class="footer-content">
+      <form class="footer-content" style="width: 100%;">
         <p class="footer-label"
           >Subscribe</p>
           <div class="footer-subscription">
@@ -295,5 +380,73 @@
       </form>
   </div>
   </footer>
+
+<!-- data modal -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button  type="button" class="btn close-button" data-modal-close="">
+        <svg class="close" width="12" height="10">
+        <use href="./images/icons.svg#icon-Vector-close"></use>
+      </svg>
+      </button>
+
+      <p class="modal-title">
+        Leave your contacts and we will call you back
+      </p>
+
+      <form class="form" autocomplete="off">
+
+          <label for="name" class="form-label">Name</label>
+          <div class="form-field">
+          <input type="text" name="user_name" class="form-input" 
+          required 
+          pattern="^[a-zA-Z а-яА-я]+"
+          />
+          <svg class="modal-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-name-data"></use>
+          </svg>
+        </div>
+
+          <label for="tel" class="form-label">Phone</label>
+          <div class="form-field">
+          <input type="tel" name="user_phone" class="form-input" 
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          />
+          <svg class="modal-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-Vector-phone"></use>
+          </svg>
+        </div>
+
+          <label for="mail" class="form-label">Mail</label>
+          <div class="form-field">
+          <input type="email" id="mail" class="form-input" />
+          <svg class="modal-icon" width="15" height="12">
+            <use href="./images/icons.svg#icon-Vector-mail"></use>
+          </svg>
+        </div>
+
+        <div class="form-field-comment">
+          <label for="commet" class="form-label">Comment</label>
+          <textarea
+            name="text"
+            class="form-textarea"
+            placeholder="Text input"
+          ></textarea>
+        </div>
+        <div class="form-label-checkbox">
+          <input type="checkbox" name="checkbox" id="agree"/>
+          <label class="form-label-check check" for="agree">
+            &nbsp; I accept the terms and conditions of the&nbsp;<a class="contract">Privacy Policy</a>
+          </label>
+      </div>
+      <button class="button form-button" type="submit">Send</button>
+      </form>
+  </div>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script> 
 </body>
 </html>

@@ -92,6 +92,7 @@ img {
 
 .header {
 background: var(--main-background-color);
+border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -1171,8 +1172,6 @@ letter-spacing: 0.02em;
 }
 }
 
-
-
 .icon-send {
   fill: currentColor;
   vertical-align: middle;
@@ -1287,6 +1286,22 @@ background-color: var(--accent);
 
 
 /* images */
+
+.gallery-item-portfolio {
+  background: var(--text-color-white);
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 48px;
+    box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
+    text-align: start;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item-portfolio:not(:nth-child(3n + 3)) {
+  margin-right: 23px;
+}
+
 
 .gallery-item {
 background: var(--text-color-white);
